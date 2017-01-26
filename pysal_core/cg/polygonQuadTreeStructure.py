@@ -1,4 +1,10 @@
-from pysal.cg.shapes import Ring
+"""
+Quad Tree Structure Class for PySAL_core/cg/shapes.Ring, PySAL_core/cg/shapes.Polygon
+This structure could speed up the determining of point in polygon process
+"""
+__author__ = "Hu Shao"
+
+from .shapes import Ring
 import math
 
 

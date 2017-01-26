@@ -3,7 +3,7 @@ Computational geometry code for PySAL: Python Spatial Analysis Library.
 
 """
 
-__author__ = "Sergio J. Rey, Xinyue Ye, Charles Schmidt, Andrew Winslow"
+__author__ = "Sergio J. Rey, Xinyue Ye, Charles Schmidt, Andrew Winslow, Hu Shao"
 __credits__ = "Copyright (c) 2005-2009 Sergio J. Rey"
 
 import doctest
@@ -1996,5 +1996,5 @@ class Rectangle(Geometry):
 _geoJSON_type_to_Pysal_type = {'point': Point, 'linestring': Chain, 'multilinestring': Chain,
                                'polygon': Polygon, 'multipolygon': Polygon}
 import standalone  # moving this to top breaks unit tests !
-from polygonQuadTreeStructure import QuadTreeStructureSingleRing
+from .polygonQuadTreeStructure import QuadTreeStructureSingleRing
 
