@@ -2,7 +2,7 @@ language: python
 sudo: false
 branches:
 only:
-  - master
+  - cg
 python:
   - "2.7"
   - "3.4"
@@ -30,6 +30,7 @@ install:
         else conda install --yes --file requirements.txt;
     fi;
   - pip install -r requirements_dev.txt
+  - pip install git+https://github.com/pysal/pysal_examples
 
 script:
   - python setup.py sdist >/dev/null
